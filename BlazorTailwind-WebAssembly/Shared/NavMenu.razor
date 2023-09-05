@@ -1,0 +1,99 @@
+﻿<div class="relative w-[250px] bg-[#3B49E6] text-white">
+    <div class="relative p-2 text-center flex place-items-center mt-5">
+        <img class="m-auto mr-1 w-[50px]" src="https://github.githubassets.com/images/modules/profile/achievements/public-sponsor-default.png" />
+        <h3 class="text-xl font-bold m-auto ml-1">Admintory</h3>
+    </div>
+    <nav class="relative w-100 text-black text-white font-medium text-center my-5">
+        <div class="relative place-content-center">
+            <NavLink class="relative flex place-content-center py-2 w-[80%] hover:bg-[rgba(255,255,255,0.5)] hover:cursor-pointer rounded-md left-[50%] translate-x-[-50%]" href="/">
+                <span class="m-auto ml-5"><i class="fa-solid fa-house w-[20px]"></i> Dashboard</span>
+                <div class="m-auto mr-5"></div>
+            </NavLink>
+        </div>
+        <div class="relative place-content-center">
+            <NavLink class="relative flex place-content-center py-2 w-[80%] hover:bg-[rgba(255,255,255,0.5)] hover:cursor-pointer rounded-md left-[50%] translate-x-[-50%]" href="/">
+                <span class="m-auto ml-5"><i class="fa-solid fa-chart-simple w-[20px]"></i> Content</span>
+                <div class="m-auto mr-5"><i class="fa-solid fa-caret-down"></i></div>
+            </NavLink>
+        </div>
+        <div class="relative place-content-center">
+            <NavLink class="relative flex place-content-center py-2 w-[80%] hover:bg-[rgba(255,255,255,0.5)] hover:cursor-pointer rounded-md left-[50%] translate-x-[-50%]" href="/">
+                <span class="m-auto ml-5"><i class="fa-solid fa-users w-[20px]"></i> Customers</span>
+                <div class="m-auto mr-5"></div>
+            </NavLink>
+        </div>
+        <div class="relative place-content-center">
+            <NavLink class="relative flex place-content-center py-2 w-[80%] bg-[rgba(255,255,255,0.5)] hover:cursor-pointer rounded-md rounded-b-none left-[50%] translate-x-[-50%]" href="/">
+                <span class="m-auto ml-5"><i class="fa-solid fa-cart-shopping w-[20px]"></i> Orders</span>
+                <div class="m-auto mr-5"><i class="fa-solid fa-caret-up"></i></div>
+            </NavLink>
+            <div class="relative flex place-content-center py-2 w-[80%] bg-[rgba(255,255,255,0.1)] hover:cursor-pointer rounded-md rounded-t-none rounded-b-none left-[50%] translate-x-[-50%]">
+                <span class="m-auto ml-5"><i class="fa-solid fa-folder-plus w-[20px]"></i> Create Order</span>
+            </div>
+            <div class="relative flex place-content-center py-2 w-[80%] bg-[rgba(255,255,255,0.1)] hover:cursor-pointer rounded-md rounded-t-none rounded-b-none left-[50%] translate-x-[-50%]">
+                <span class="m-auto ml-5"><i class="fa-solid fa-truck-ramp-box w-[20px]"></i> Dispatch Order</span>
+            </div>
+            <div class="relative flex place-content-center py-2 w-[80%] bg-[rgba(255,255,255,0.1)] hover:cursor-pointer rounded-md rounded-t-none rounded-b-none left-[50%] translate-x-[-50%]">
+                <span class="m-auto ml-5"><i class="fa-solid fa-file-invoice w-[20px]"></i> Build Invoice</span>
+            </div>
+            <div class="relative flex place-content-center py-2 w-[80%] bg-[rgba(255,255,255,0.1)] hover:cursor-pointer rounded-md rounded-t-none rounded-b-none left-[50%] translate-x-[-50%]">
+                <span class="m-auto ml-5"><i class="fa-solid fa-list w-[20px]"></i> Checkout Feedback</span>
+            </div>
+            <div class="relative flex place-content-center py-2 w-[80%] bg-[rgba(255,255,255,0.1)] hover:cursor-pointer rounded-md rounded-t-none left-[50%] translate-x-[-50%]">
+                <span class="m-auto ml-5"><i class="fa-solid fa-magnifying-glass w-[20px]"></i> Search by Content</span>
+            </div>
+        </div>
+        <div class="relative place-content-center">
+            <NavLink class="relative flex place-content-center py-2 w-[80%] hover:bg-[rgba(255,255,255,0.5)] hover:cursor-pointer rounded-md left-[50%] translate-x-[-50%]" href="/">
+                <span class="m-auto ml-5"><i class="fa-solid fa-truck-fast w-[20px]"></i> Shipping</span>
+                <div class="m-auto mr-5"></div>
+            </NavLink>
+        </div>
+        <div class="relative place-content-center">
+            <NavLink class="relative flex place-content-center py-2 w-[80%] hover:bg-[rgba(255,255,255,0.5)] hover:cursor-pointer rounded-md left-[50%] translate-x-[-50%]" href="/">
+                <span class="m-auto ml-5"><i class="fa-solid fa-box w-[20px]"></i> Customers</span>
+                <div class="m-auto mr-5"><i class="fa-solid fa-caret-down"></i></div>
+            </NavLink>
+        </div>
+    </nav>
+</div>
+<!--
+<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">BlazorTailwind-WebAssembly</a>
+        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</div>
+
+<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
+    <nav class="flex-column">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="oi oi-home" aria-hidden="true"></span> Home
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="counter">
+                <span class="oi oi-plus" aria-hidden="true"></span> Counter
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="fetchdata">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
+            </NavLink>
+        </div>
+    </nav>
+</div>
+-->
+@code {
+    private bool collapseNavMenu = true;
+
+    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}

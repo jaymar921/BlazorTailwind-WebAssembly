@@ -1,0 +1,108 @@
+﻿@page "/"
+
+<PageTitle>Dashboards > Orders</PageTitle>
+
+<div class="relative container p-5 border-solid border-[5px] border-[#3B49E6] h-[100%] w-[100%]">
+    <!-- Profile / Banner -->
+    <div class="relative flex h-[50px] text-lg font-medium">
+        <h3 class="m-auto ml-5">Dashboards > Orders</h3>
+        <div class="flex m-auto mr-5 h-[50px] place-items-center">
+            <i class="fa-regular fa-bell text-[20px] ml-2"></i>
+            <img class="w-[40px] rounded-[50%] ml-2" src="https://avatars.githubusercontent.com/u/72720429?v=4" />
+            <h3 class="font-bold text-[15px] ml-2">Jayharron Mar Abejar <i class="fa-solid fa-caret-down text-gray-500"></i></h3>
+        </div>
+    </div>
+    <hr />
+    <!-- Orders -->
+    <div class="relative flex h-[50px] my-5">
+        <h3 class="m-auto ml-5 text-[25px] font-bold">Orders</h3>
+        <button class="m-auto mr-5 bg-[#3B49E6] py-2 px-5 text-white font-semibold rounded-[10px]">CREATE NEW</button>
+    </div>
+
+    <!-- Search -->
+    <div class="relative flex bg-white rounded-[10px] my-5">
+        <div class="relative flex w-[100%]">
+            <div class="grow w-64">
+                <div class="p-2">
+                    <h3 class="font-medium text-[14px]">What are you looking for?</h3>
+                    <input class="w-[100%] border-solid border-2 border-gray-100 outline-none text-[12px] p-1 rounded-lg" placeholder="Search for category, name, company, etc" />
+                </div>
+            </div>
+            <div class="flex-auto min-w-32">
+                <div class="p-2">
+                    <h3 class="font-medium text-[14px]">Category</h3>
+                    <select class="w-[100%] border-solid border-2 border-gray-100 outline-none text-[12px] p-1 rounded-lg text-gray-500">
+                        <option>All</option>
+                    </select>
+                </div>
+            </div>
+            <div class="flex-auto min-w-32">
+                <div class="p-2">
+                    <h3 class="font-medium text-[14px]">Status</h3>
+                    <select class="w-[100%] border-solid border-2 border-gray-100 outline-none text-[12px] p-1 rounded-lg text-gray-500">
+                        <option>All</option>
+                    </select>
+                </div>
+            </div>
+            <div class="grow">
+                <div class="p-2">
+                    <h3 class="font-medium text-[14px]">&nbsp;</h3>
+                    <div class="flex">
+                        <i class="fa-solid fa-angles-down border-2 border-gray-500 rounded-[50%] p-1 m-auto mr-1"></i>
+                        <button class="m-auto mr-5 bg-[#3B49E6] text-[10px] py-2 px-5 text-white font-semibold rounded-[10px] m-auto mr-1">SEARCH</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Product Summary -->
+    <div class="relative bg-white rounded-[10px] my-5">
+        <!-- Header -->
+        <div class="flex h-[50px] place-items-center">
+            <div class="grow min-w-32 w-64 p-2 m-auto">
+                <h3 class="font-bold text-[20px]">Product Summary</h3>
+            </div>
+            <div class="flex flex-auto grow min-w-32 w-40 p-2 m-auto place-items-center">
+                <p class="text-[12px] pr-1">Show</p>
+                <select class="w-[100%] border-solid border-2 border-gray-100 outline-none text-[12px] p-1 rounded-lg text-gray-500 font-bold">
+                    <option>ALL COLUMN</option>
+                </select>
+            </div>
+            <div class="p-2 grow min-w-36">
+                <button class="m-auto mr-5 bg-[#3B49E6] text-[10px] py-2 px-2 text-white font-semibold rounded-[10px] m-auto mr-1">DISPATCH SELECTED</button>
+            </div>
+            <div class="p-2 grow min-w-32 w-64 m-auto font-bold text-center">
+                <!-- Pagination -->
+                <button class=" px-2 border-solid rounded-[5px]"><i class="fa-solid fa-angle-left"></i></button>
+                <button class=" px-2 border-solid rounded-[5px]">1</button>
+                <button class=" px-2 border-solid rounded-[5px]">2</button>
+                <button class="bg-[#3B49E6] px-2 text-white border-solid rounded-[5px]">3</button>
+                <button class=" px-2 border-solid rounded-[5px]">...</button>
+                <button class=" px-2 border-solid rounded-[5px]">10</button>
+                <button class=" px-2 border-solid rounded-[5px]"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+        </div>
+
+        <!-- Table -->
+        <div class="container p-2">
+            <table class="table-auto">
+                <thead>
+                    <tr>
+                        <th><input type="checkbox" /></th>
+                        <th>ID</th>
+                        <th>SHIPPING #</th>
+                        <th>DATE</th>
+                        <th>STATUS</th>
+                        <th>CUSTOMER</th>
+                        <th>EMAIL</th>
+                        <th>COUNTRY</th>
+                        <th>SHIPPING</th>
+                        <th>SOURCE</th>
+                        <th>ORDER TYPE</th>
+                        <th></th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</div>
