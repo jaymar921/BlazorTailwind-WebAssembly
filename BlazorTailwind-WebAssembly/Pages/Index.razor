@@ -2,7 +2,7 @@
 
 <PageTitle>Dashboards > Orders</PageTitle>
 
-<div class="relative container p-5 border-solid border-[5px] border-[#3B49E6] h-[100%] w-[100%]">
+<div class="relative container p-5 border-solid border-[5px] border-[#3B49E6] h-[100%] w-[100%] overflow-hidden">
     <!-- Profile / Banner -->
     <div class="relative flex h-[50px] text-lg font-medium">
         <h3 class="m-auto ml-5">Dashboards > Orders</h3>
@@ -84,8 +84,8 @@
         </div>
 
         <!-- Table -->
-        <div class="container p-2">
-            <table class="table-auto">
+        <div class="relative container h-[400px] overflow-y-scroll">
+            <table class="table-auto w-[100%] text-center">
                 <thead>
                     <tr>
                         <th><input type="checkbox" /></th>
@@ -99,9 +99,28 @@
                         <th>SHIPPING</th>
                         <th>SOURCE</th>
                         <th>ORDER TYPE</th>
-                        <th></th>
+                        <th>&nbsp;</th>
                     </tr>
                 </thead>
+                <tbody>
+                    @for(int i = 0; i < 20; i++)
+                    {
+                        <tr class="border-y-2 border-gray-100">
+                            <td class="py-2"><input type="checkbox" /></td>
+                            <td>@(Math.Floor(new Random().NextDouble() * 999999))</td>
+                            <td>@(Math.Floor(new Random().NextDouble() * 999999))</td>
+                            <td>6 Sept. 2023</td>
+                            <td>Pending</td>
+                            <td>JayMar</td>
+                            <td>test@email.com</td>
+                            <td>Philippines</td>
+                            <td>Cebu Post Office</td>
+                            <td>JNT</td>
+                            <td>Customer</td>
+                            <td><i class="fa-solid fa-pen-to-square"></i></td>
+                        </tr>
+                    }
+                </tbody>
             </table>
         </div>
     </div>
